@@ -1,0 +1,22 @@
+
+
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <div class="collapse navbar-collapse" id="navbarNav">
+
+    <a class='navbar-brand' href='/'>
+      Frog<span class='light'>Blog</span>
+    </a>
+     <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+      &#9776;
+    </button>
+
+    <ul class="navbar-nav pull-xs-right">
+      <li class="nav-item">
+         <%= link_to 'About', about_path, class: "nav-link #{yield(:about_active)}" %>
+      </li>
+      <li class="nav-item active">
+         <%= link_to 'Contact', contact_path, class: "nav-link #{yield(:contact_active)}" %>
+      </li>
+    </ul>
+  </div>
+</nav>
