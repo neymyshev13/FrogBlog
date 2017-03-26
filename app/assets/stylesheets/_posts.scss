@@ -2,7 +2,7 @@
   .card {
     border: none;
     border-radius: 0;
-    border-bottom: 1px solid #181818;
+    border-bottom: 1px solid #E2C4A7;
     height: 400px;
     margin-bottom: 20px;
     .card-topper {
@@ -14,30 +14,35 @@
     .card-block {
       padding: 10px;
       .btn-read {
-        background-color: #e8e8e8;
+        background-color: #E29392;
         font-weight: 300;
-        border-radius: 0;
+        border-radius: 0.1px;
         color: black;
         &:hover {
-          background-color: #d8d8d8;
+          background-color: #CF4B4A;
+          color: white;
         }
       }
       .card-title {
         font-size: 1.3rem;
         margin-bottom: 0.5rem;
         a {
-        color: black;
+        color: #3D223F;
+        &:hover {
+          color: #C949D0;
+        }
         text-decoration: none;
         }
       }
       .published-date {
         font-size: 0.8rem;
-        color: #787878;
+        color: #C185E0;
         font-weight: 300;
         margin-top: 0.3rem;
         margin-bottom: 0.3rem;
       }
       .card-text {
+        color: #3D223F;
         font-size: 0.9rem;
       }
     }

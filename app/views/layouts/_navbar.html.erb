@@ -17,6 +17,9 @@
       <li class="nav-item active">
          <%= link_to 'Contact', contact_path, class: "nav-link #{yield(:contact_active)}" %>
       </li>
+      <li class="nav-item active">
+         <%= link_to 'My posts', author_posts_path, class: "nav-link #{yield(:author)}" %>
+      </li>
     </ul>
   </div>
 </nav>
