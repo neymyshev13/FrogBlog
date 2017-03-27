@@ -4,7 +4,12 @@
   margin-bottom: 20px;
   .navbar-brand {
     color: #3D223F;
+    &:hover {
+      color: white;
+      background-color: #D77070;
+    }
     font-weight: bolder;
+    font-size: 26px;
     .light {
       font-weight: 300;
     }

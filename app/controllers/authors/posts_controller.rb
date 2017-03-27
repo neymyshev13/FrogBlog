@@ -1,11 +1,11 @@
-module Author
+module Authors
   class PostsController < AuthorController
     before_action :set_post, only: [:show, :edit, :update, :destroy]
 
     # GET /posts
     # GET /posts.json
     def index
-      @posts = Post.most_recent
+      @posts = current_author.posts.most_recent
     end
 
     # GET /posts/1
@@ -15,7 +15,7 @@ module Author
 
     # GET /posts/new
     def new
-     @post = Post.new
+     @post = current_author.posts.new
     end
 
    # GET /posts/1/edit
@@ -25,11 +25,11 @@ module Author
     # POST /posts
    # POST /posts.json
    def create
-     @post = Post.new(post_params)
+     @post = current_author.posts.new(post_params)
 
      respond_to do |format|
        if @post.save
-         format.html { redirect_to author_post_path(@post), notice: 'Post was successfully created.' }
+         format.html { redirect_to authors_post_path(@post), notice: 'Post was successfully created.' }
          format.json { render :show, status: :created, location: @post }
        else
           format.html { render :new }
@@ -43,7 +43,7 @@ module Author
    def update
       respond_to do |format|
        if @post.update(post_params)
-         format.html { redirect_to author_post_path(@post), notice: 'Post was successfully updated.' }
+         format.html { redirect_to authors_post_path(@post), notice: 'Post was successfully updated.' }
          format.json { render :show, status: :ok, location: @post }
        else
           format.html { render :edit }
@@ -57,7 +57,7 @@ module Author
    def destroy
       @post.destroy
      respond_to do |format|
-        format.html { redirect_to author_posts_url, notice: 'Post was successfully destroyed.' }
+        format.html { redirect_to authors_posts_url, notice: 'Post was successfully destroyed.' }
        format.json { head :no_content }
      end
     end
@@ -65,7 +65,7 @@ module Author
     private
     # Use callbacks to share common setup or constraints between actions.
       def set_post
-        @post = Post.friendly.find(params[:id])
+        @post = current_author.posts.friendly.find(params[:id])
       end
 
      # Never trust parameters from the scary internet, only allow the white list through.
