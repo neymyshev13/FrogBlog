@@ -24,6 +24,7 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'devise'
 gem 'annotate'
 gem 'will_paginate', '~> 3.1.0'
+gem 'acts-as-taggable-on', '~> 4.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
