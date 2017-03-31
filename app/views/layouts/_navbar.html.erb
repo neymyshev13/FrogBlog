@@ -10,19 +10,23 @@
       &#9776;
     </button>
 
-    <ul class="navbar-nav xs-right">
-      <li class="nav-item">
-         <%= link_to 'About', about_path, class: "nav-link #{yield(:about_active)}" %>
-      </li>
-      <li class="nav-item">
-         <%= link_to 'Contact', contact_path, class: "nav-link #{yield(:contact_active)}" %>
-      </li>
+        <ul class="navbar-nav xs-right">
+          <li class="nav-item">
+             <%= link_to 'About', about_path, class: "nav-link #{yield(:about_active)}" %>
+          </li>
+          <li class="nav-item">
+             <%= link_to 'Contact', contact_path, class: "nav-link #{yield(:contact_active)}" %>
+          </li>
       <% if author_signed_in? %>
-        <li class="nav-item">
-          <%= link_to 'My posts', authors_posts_path, class: "nav-link #{yield(:author)}" %>
-        </li>
-        <li class="nav-item active">
-          <%= link_to 'Logout', destroy_author_session_path, method: :delete, class: "nav-link" %>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle <%= yield(:author) %>" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Author
+          </a>
+          <div class="dropdown-menu" aria-labelledy="navbarDropdownMenuLink">
+              <%= link_to 'My posts', authors_posts_path, class: "dropdown-item" %>
+              <%= link_to 'Account', '#', class: "dropdown-item" %>
+              <%= link_to 'Logout', destroy_author_session_path, method: :delete, class: "dropdown-item" %>
+          </div>
         </li>
       <% end %>
     </ul>

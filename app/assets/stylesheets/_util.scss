@@ -2,19 +2,19 @@
 
 
 .apple_pagination {
-  background: #FBE8D5;
-  border: 1px solid #F2CFEC;
+  background: #7B1FA2;
+  border: 1px solid #9C27B0;
   text-align: center;
   padding: 1em;
   cursor: default; }
   .apple_pagination a, .apple_pagination span {
     padding: 0.2em 0.3em; }
   .apple_pagination .disabled {
-    color: #aaaaaa; }
+    color: white; }
   .apple_pagination .current {
     font-style: normal;
     font-weight: bold;
-    background-color: #bebebe;
+    background-color: white;
     display: inline-block;
     width: 1.4em;
     height: 1.4em;
@@ -25,6 +25,9 @@
     text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px; }
   .apple_pagination a {
     text-decoration: none;
-    color: black; }
+    color: black;
+    &:hover {
+      color: white;
+    }}
     .apple_pagination a:hover, .apple_pagination a:focus {
       text-decoration: underline; }

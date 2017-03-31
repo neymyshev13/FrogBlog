@@ -2,20 +2,21 @@
 <% provide(:blog_active, 'active') %>
 
 <div class="row">
-  <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-xs-center">
-    <h1><%= @post.title %></h1>
-    <p><%= @post.display_day_published %></p>
-    <%= @post.body.html_safe %>
+  <div class=col-md-1 col-lg-2"></div>
+    <div class="col-md-10 col-lg-8 text-xs-center">
+      <h1><%= @post.title %></h1>
+      <h5><%= @post.display_day_published %></h5>
+      <%= @post.body.html_safe %>
 
 
 
-    <div id="disqus_thread"></div>
-    <noscript>
-      Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-    </noscript>
+      <div id="disqus_thread"></div>
+      <noscript>
+        Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+      </noscript>
+    </div>
   </div>
-</div>
-<script>
+  <script>
 
 /**
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
