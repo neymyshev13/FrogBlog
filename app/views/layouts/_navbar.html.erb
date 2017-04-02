@@ -10,7 +10,7 @@
       &#9776;
     </button>
 
-        <ul class="navbar-nav xs-right">
+        <ul class="navbar-nav">
           <li class="nav-item">
              <%= link_to 'About', about_path, class: "nav-link #{yield(:about_active)}" %>
           </li>
@@ -24,7 +24,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledy="navbarDropdownMenuLink">
               <%= link_to 'My posts', authors_posts_path, class: "dropdown-item" %>
-              <%= link_to 'Account', '#', class: "dropdown-item" %>
+              <%= link_to 'Account', authors_account_path, class: "dropdown-item" %>
               <%= link_to 'Logout', destroy_author_session_path, method: :delete, class: "dropdown-item" %>
           </div>
         </li>
