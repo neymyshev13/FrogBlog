@@ -25,4 +25,14 @@ class Author < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :posts
+
+  validates_presence_of :name, on: :update
+
+
+  def change_password(attrs)
+    update(password: attrs[:new_password], password_confirmation: attrs[:new_password_confirmation])
+  end
+
+
+
 end
