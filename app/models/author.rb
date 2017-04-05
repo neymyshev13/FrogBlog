@@ -34,5 +34,12 @@ class Author < ApplicationRecord
   end
 
 
+  def display_name
+    if name.present?
+      name
+    else
+      "Author"
+    end
+  end
 
 end

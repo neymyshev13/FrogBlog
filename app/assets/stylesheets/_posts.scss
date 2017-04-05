@@ -5,7 +5,7 @@
     border-bottom: 1px solid #E2C4A7;
     height: 400px;
     margin-bottom: 20px;
-    background-color: white;
+    background-color: #DBD6D6;
     .card-topper {
       height: 200px;
       width: 100%;
@@ -18,9 +18,9 @@
         font-size: 1.3rem;
         margin-bottom: 0;
         a {
-        color: #3D223F;
+        color: black;
         &:hover {
-          color: #C949D0;
+          color: #372C3F;
         }
         text-decoration: none;
         }
@@ -34,13 +34,13 @@
       }
       .published-date {
         font-size: 0.8rem;
-        color: #C185E0;
+        color: #04232F;
         font-weight: 300;
         margin-top: 0.3rem;
         margin-bottom: 0.3rem;
       }
       .card-text {
-        color: #3D223F;
+        color: black;
         font-size: 0.9rem;
         text-decoration: none;
       }
@@ -72,6 +72,23 @@
       &:last-child {
         background-color: #FBE8D5;
       }
+    }
+  }
+}
+
+.posts.show {
+  .author-bio {
+    background-color: #F1EAEA;
+    padding: 15px 45px;
+    border: 1px solid #9B8C8C;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    h4 {
+      font-weight: bold;
+    }
+    h6 {
+      font-weight: 500;
     }
   }
 }

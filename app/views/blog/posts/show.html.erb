@@ -8,7 +8,10 @@
       <h5><%= @post.display_day_published %></h5>
       <%= @post.body.html_safe %>
 
-
+      <div class="author-bio">
+        <h4><%= @post.author.name %></h4>
+        <h6 class="bio"><%= @post.author.bio %></h6>
+      </div>
 
       <div id="disqus_thread"></div>
       <noscript>
