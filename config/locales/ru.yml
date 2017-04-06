@@ -38,3 +38,5 @@ ru:
       account: 'Мой аккаунт'
       logout: 'Выйти'
       login: 'Войти'
+      en: 'Eng'
+      rus: 'Рус'

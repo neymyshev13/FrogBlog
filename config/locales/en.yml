@@ -20,4 +20,44 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  will_paginate:
+    previous_label: 'Previous'
+    next_label: 'Next'
+
+  authors:
+    accounts:
+      edit:
+        basic_info: 'Basic info'
+        update_info: 'Update info'
+        change_password: 'Change password'
+    posts:
+      form:
+        new_post: 'New post'
+        edit: 'Edit'
+        show: 'Show'
+        save_post: 'Save post'
+        back: 'Back'
+      index:
+        all_posts: 'All posts'
+        new_post: 'New post'
+        title: 'Title'
+      show:
+        edit: 'Edit'
+        remove: 'Delete'
+      new:
+        title: 'New post'
+      post:
+        unpublish: 'Unpublishь'
+        publish: 'Publish'
+        edit: 'Edit'
+        remove: 'Delete'
+  layouts:
+    navbar:
+      about: 'About'
+      contact: 'Contacts'
+      my_posts: 'My posts'
+      account: 'My account'
+      logout: 'Logout'
+      login: 'Login'
+      en: 'Eng'
+      rus: 'Rus'

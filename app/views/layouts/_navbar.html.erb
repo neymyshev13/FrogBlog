@@ -33,6 +33,12 @@
           <%= link_to t('.login'), author_session_path, class: "nav-link" %>
         </li>
       <% end %>
+      <li class="nav-item<%= " active" if I18n.locale == :ru %>">
+          <%= link_to t('.rus'), { locale: :ru }, class: "nav-link" %>
+      </li>
+      <li class="nav-item<%= " active" if I18n.locale == :en %>">
+          <%= link_to t('.en'), { locale: :en }, class: "nav-link" %>
+      </li>
     </ul>
   </div>
 </nav>

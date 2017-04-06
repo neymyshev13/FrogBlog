@@ -12,6 +12,7 @@ module FrogBlog
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     config.time_zone = 'Moscow'
+    config.i18n.available_locales = [:ru, :en]
     config.i18n.default_locale = :ru
   end
 end
