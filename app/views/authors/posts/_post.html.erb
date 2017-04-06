@@ -1,10 +1,10 @@
 <tr>
   <td><%= link_to post.title, authors_post_path(post) %></td>
   <% if post.published? %>
-    <td><%= link_to 'Unpublish', unpublish_authors_post_path(post), method: :put, class: 'btn btn-sm btn-primary' %></td>
+    <td><%= link_to t('.unpublish'), unpublish_authors_post_path(post), method: :put, class: 'btn btn-sm btn-primary' %></td>
   <% else %>
-    <td><%= link_to 'Publish', publish_authors_post_path(post), method: :put, class: 'btn btn-sm btn-success' %></td>
+    <td><%= link_to t('.publish'), publish_authors_post_path(post), method: :put, class: 'btn btn-sm btn-success' %></td>
   <% end %>
-  <td><%= link_to 'Edit', edit_authors_post_path(post), class: 'btn btn-sm btn-warning' %></td>
-  <td><%= link_to 'Remove', authors_post_path(post), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-danger' %></td>
+  <td><%= link_to t('.edit'), edit_authors_post_path(post), class: 'btn btn-sm btn-warning' %></td>
+  <td><%= link_to t('.remove'), authors_post_path(post), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-danger' %></td>
 </tr>

@@ -1,0 +1,13 @@
+ru:
+  activerecord:
+    models:
+      post: 'Статья'
+    attributes:
+      post:
+        title: 'Название'
+        description: 'Описание'
+        body: 'Содержимое'
+        banner_image_url: 'Адрес изображения'
+        Tags: 'Теги'
+      authors:
+          name: 'Имя'

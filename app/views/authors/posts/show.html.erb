@@ -2,8 +2,8 @@
 <% provide(:author, 'active') %>
 
 <div>
-  <%= link_to 'Edit', edit_authors_post_path(@post), class: 'btn btn-sm btn-warning' %>
-  <%= link_to 'Remove', authors_post_path(@post), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-danger' %>
+  <%= link_to t('.edit'), edit_authors_post_path(@post), class: 'btn btn-sm btn-warning' %>
+  <%= link_to t('.remove'), authors_post_path(@post), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-danger' %>
 </div>
 
 <div class="row">

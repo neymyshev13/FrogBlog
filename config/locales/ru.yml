@@ -1,0 +1,40 @@
+ru:
+  will_paginate:
+    previous_label: 'Сюда'
+    next_label: 'Туда'
+
+  authors:
+    accounts:
+      edit:
+        basic_info: 'О пользователе'
+        update_info: 'Обновить информацию'
+        change_password: 'Изменить пароль'
+    posts:
+      form:
+        new_post: 'Новая статья'
+        edit: 'Изменить'
+        show: 'Показать'
+        save_post: 'Сохранить'
+        back: 'Назад'
+      index:
+        all_posts: 'Все статьи'
+        new_post: 'Новая статья'
+        title: 'Название статьи'
+      show:
+        edit: 'Изменить'
+        remove: 'Удалить'
+      new:
+        title: 'Новая статья'
+      post:
+        unpublish: 'Скрыть'
+        publish: 'Показать'
+        edit: 'Изменить'
+        remove: 'Удалить'
+  layouts:
+    navbar:
+      about: 'О нас'
+      contact: 'Контакты'
+      my_posts: 'Мои статьи'
+      account: 'Мой аккаунт'
+      logout: 'Выйти'
+      login: 'Войти'

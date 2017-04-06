@@ -1,14 +1,14 @@
-<% provide(:page_title, 'All Posts') %>
+<% provide(:page_title, t('.all_posts') ) %>
 <% provide(:author, 'active') %>
 
 <div class="row">
   <div>
-    <%= link_to 'New post', new_authors_post_path, class: 'btn btn-primary btn-lg' %>
+    <%= link_to t('.new_post'), new_authors_post_path, class: 'btn btn-primary btn-lg' %>
   </div>
   <br>
   <table class="table table-striped">
     <tr>
-      <th colspan="5">Title</th>
+      <th colspan="5"><%= t('.title') %></th>
     </tr>
     <%= render @posts %>
   </table>

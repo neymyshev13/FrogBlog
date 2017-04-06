@@ -16,10 +16,10 @@
       <div class="card">
         <div class="card-block">
           <% if @post.new_record? %>
-            <h4 class="card-title">New post</h4>
+            <h4 class="card-title"><%= t('.new_post') %></h4>
           <% else %>
             <h4 class="card-title">
-              <b>Edit</b>
+              <b><%= t('.edit') %></b>
               <span class="thin-text"><%= @post.title %></span>
             </h4>
           <% end %>
@@ -51,7 +51,7 @@
           </li>
           <li class="list-group-item">
             <div class="actions">
-              <%= f.submit "Save post", class: 'btn btn-success btn-block' %>
+              <%= f.submit t('.save_post'), class: 'btn btn-success btn-block' %>
             </div>
           </li>
         </ul>
@@ -59,9 +59,9 @@
       <br>
 
       <% if @post.persisted? %>
-        <%= link_to 'Show', @post %> |
+        <%= link_to t('.show'), @post %> |
       <% end %>
-      <%= link_to 'Back', authors_posts_path %>
+      <%= link_to t('.back'), authors_posts_path %>
     </div>
     <div class="col-md-8">
       <div class="field">
